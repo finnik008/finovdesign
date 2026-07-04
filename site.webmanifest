@@ -1,0 +1,22 @@
+{
+  "name": "FINDESIGN",
+  "short_name": "FINDESIGN",
+  "description": "Разработка сайтов под ключ и веб-дизайн",
+  "icons": [
+    {
+      "src": "favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#141414",
+  "background_color": "#EFEEEC",
+  "display": "standalone",
+  "lang": "ru",
+  "start_url": "/"
+}

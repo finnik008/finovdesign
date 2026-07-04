@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FINDESIGN — сайты под ключ и веб-дизайн | Марат</title>
+<meta name="description" content="Разрабатываю сайты под ключ, которые привлекают клиентов и повышают конверсию: от идеи и прототипа до запуска. Лендинги, многостраничные сайты и интернет-магазины.">
+<meta name="keywords" content="веб-дизайн, разработка сайтов под ключ, создание сайтов, лендинг, корпоративный сайт, интернет-магазин, заказать сайт">
+<meta name="author" content="Марат · FINDESIGN">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#EFEEEC">
+<link rel="canonical" href="https://finovdesign.ru/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FINDESIGN">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://finovdesign.ru/">
+<meta property="og:title" content="FINDESIGN — сайты под ключ и веб-дизайн">
+<meta property="og:description" content="Сайты под ключ, которые превращают посетителей в клиентов. От идеи и прототипа до запуска.">
+<meta property="og:image" content="https://finovdesign.ru/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FINDESIGN — сайты под ключ и веб-дизайн">
+<meta name="twitter:description" content="Сайты под ключ, которые превращают посетителей в клиентов.">
+<meta name="twitter:image" content="https://finovdesign.ru/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(){var YM_ID="XXXXXXXX"; /* <- замените XXXXXXXX на номер счётчика Яндекс.Метрики */
+if(!YM_ID||YM_ID==="XXXXXXXX"){return;}
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<e.scripts.length;j++){if(e.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(Number(YM_ID),"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});})();
+</script>
+<!-- /Yandex.Metrika counter -->
+<style>
+:root{--accent:#9E3490}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;font-family:Manrope,system-ui,sans-serif;background:#EFEEEC;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+::selection{background:var(--accent,#9E3490);color:#fff}
+::-webkit-scrollbar{width:11px}::-webkit-scrollbar-track{background:#e6e5e2}::-webkit-scrollbar-thumb{background:#c5c3be;border-radius:10px;border:3px solid #e6e5e2}
+@keyframes fd-spin{to{transform:rotate(360deg)}}
+@keyframes fd-marq{to{transform:translateX(-50%)}}
+@keyframes fd-shimmer{100%{background-position:-200% 0}}
+@keyframes fd-pulse{0%{box-shadow:0 0 0 0 rgba(40,190,110,.6)}70%{box-shadow:0 0 0 7px rgba(40,190,110,0)}100%{box-shadow:0 0 0 0 rgba(40,190,110,0)}}
+.fd-spin{animation:fd-spin 24s linear infinite;transform-origin:50% 50%}
+.fd-marquee{animation:fd-marq 34s linear infinite}
+.fd-dot-live{animation:fd-pulse 2.4s ease-out infinite}
+@keyframes fd-rise{from{transform:translateY(26px)}to{transform:none}}
+.fd-eager{animation:fd-rise .8s cubic-bezier(.19,.7,.2,1) both}
+[data-reveal]{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.19,.7,.2,1),transform .9s cubic-bezier(.19,.7,.2,1)}
+[data-reveal].is-visible{opacity:1;transform:none}
+.fd-acc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s cubic-bezier(.2,.7,.2,1)}
+[data-acc].is-open .fd-acc-body{grid-template-rows:1fr}
+.fd-acc-inner{overflow:hidden;min-height:0}
+[data-acc]{transition:background .4s}
+.fd-plus{position:relative;width:22px;height:22px;flex:none;color:inherit;transition:transform .45s cubic-bezier(.2,.7,.2,1),color .3s}
+.fd-plus::before,.fd-plus::after{content:'';position:absolute;background:currentColor;border-radius:2px;left:0;top:10px;width:22px;height:2px}
+.fd-plus::after{top:0;left:10px;width:2px;height:22px;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+[data-acc].is-open .fd-plus{transform:rotate(180deg);color:var(--accent,#9E3490)}
+[data-acc].is-open .fd-plus::after{transform:scaleY(0)}
+[data-tilt]{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+[data-tilt-img]{transform:translateY(var(--ply,0px)) scale(1.05);transition:transform .6s cubic-bezier(.2,.7,.2,1);will-change:transform}
+[data-tilt]:hover [data-tilt-img]{transform:translateY(var(--ply,0px)) scale(1.12)}
+.fd-phone{position:absolute;right:4%;bottom:-7%;height:58%;width:auto;pointer-events:none;opacity:0;transform:translateY(22%) scale(.94);transition:opacity .5s cubic-bezier(.2,.8,.2,1),transform .65s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 16px 26px rgba(0,0,0,.42));z-index:4;will-change:transform,opacity}
+.fd-case-img .fd-phone{height:66%;right:7%}
+[data-tilt]:hover .fd-phone{opacity:1;transform:translateY(0) scale(1)}
+@media (hover:none){.fd-phone{display:none}}
+.fd-cursor-dot,.fd-cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;border-radius:50%;mix-blend-mode:difference;will-change:transform}
+.fd-cursor-dot{width:7px;height:7px;margin:-3.5px;background:#fff}
+.fd-cursor-ring{width:40px;height:40px;margin:-20px;border:1px solid rgba(255,255,255,.7);transition:width .26s,height .26s,margin .26s,background-color .26s,border-color .26s}
+.cursor-active .fd-cursor-ring{width:66px;height:66px;margin:-33px;background:rgba(255,255,255,.14);border-color:transparent}
+.has-cursor,.has-cursor a,.has-cursor button,.has-cursor [data-cursor]{cursor:none}
+[data-header]{transition:background-color .45s,backdrop-filter .45s,border-color .45s,box-shadow .45s}
+[data-header].is-stuck{background:rgba(238,237,235,.72);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);border-bottom-color:rgba(0,0,0,.08)!important;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+[data-mobile-menu]{opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .4s,transform .55s cubic-bezier(.2,.7,.2,1),visibility .4s}
+.menu-open [data-mobile-menu]{opacity:1;visibility:visible;transform:none}
+.fd-burger span{transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.menu-open .fd-burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .fd-burger span:nth-child(2){opacity:0}
+.menu-open .fd-burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.fd-ph{background:linear-gradient(110deg,#e4e3df 8%,#dad8d3 20%,#e4e3df 34%);background-size:200% 100%;animation:fd-shimmer 2.6s linear infinite}
+.fd-link-u{position:relative}
+.fd-link-u::after{content:'';position:absolute;left:0;bottom:-3px;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.fd-link-u:hover::after{transform:scaleX(1);transform-origin:left}
+/* ===== Кнопки: ховеры v2 ===== */
+.fd-btn,.fd-darkcta,.fd-ghost,.fd-ghost-d,.fd-ico,.fd-arrow,.fd-circarrow{transition:transform .5s cubic-bezier(.2,.85,.25,1),box-shadow .5s cubic-bezier(.2,.85,.25,1),background-color .5s ease,border-color .5s ease,color .5s ease}
+.fd-btn:active,.fd-darkcta:active,.fd-ghost:active,.fd-ghost-d:active,.fd-ico:active,.fd-arrow:active,.fd-circarrow:active{transform:scale(.95)}
+.fd-cta-ico{transition:transform .55s cubic-bezier(.34,1.45,.4,1),background-color .45s ease}
+.fd-btn:hover{transform:translateY(-3px);box-shadow:0 22px 44px -18px color-mix(in srgb,var(--accent,#9E3490) 70%,transparent)}
+.fd-btn:hover .fd-cta-ico{transform:rotate(-45deg)}
+.fd-darkcta:hover{background:var(--accent,#9E3490)!important;box-shadow:0 18px 34px -18px color-mix(in srgb,var(--accent,#9E3490) 60%,transparent)}
+.fd-darkcta:hover .fd-cta-ico{transform:translateX(5px)}
+.fd-ghost,.fd-ghost-d{position:relative;overflow:hidden;z-index:0}
+.fd-ghost::before,.fd-ghost-d::before{content:'';position:absolute;inset:0;z-index:-1;transform:translateX(-101%);transition:transform .55s cubic-bezier(.5,0,.12,1)}
+.fd-ghost::before{background:#141414}
+.fd-ghost-d::before{background:#F4F3F1}
+.fd-ghost:hover{color:#fff;border-color:#141414}
+.fd-ghost-d:hover{color:#141414;border-color:transparent}
+.fd-ghost:hover::before,.fd-ghost-d:hover::before{transform:translateX(0)}
+.fd-ico{position:relative;overflow:hidden}
+.fd-ico:hover{background:var(--accent,#9E3490);border-color:transparent;color:#fff;transform:translateY(-2px);box-shadow:0 14px 26px -14px color-mix(in srgb,var(--accent,#9E3490) 70%,transparent)}
+.fd-pl{transition:transform .5s cubic-bezier(.5,0,.12,1),opacity .35s ease}
+.fd-pl.b{position:absolute;inset:0;display:grid;place-items:center;transform:translate(-150%,150%);opacity:0}
+.fd-ico:hover .fd-pl.a{transform:translate(150%,-150%);opacity:0}
+.fd-ico:hover .fd-pl.b{transform:translate(0,0);opacity:1}
+.fd-arrow:hover .fd-cta-ico{transform:rotate(-45deg);background:var(--accent,#9E3490)!important}
+.fd-circarrow:hover{background:#141414!important;color:#fff!important;transform:rotate(-45deg) scale(1.08)}
+/* портфолио — большие карточки */
+.fd-case{display:flex;align-items:stretch}
+.fd-case.rev{flex-direction:row-reverse}
+.fd-case>.fd-case-txt{flex:1 1 50%;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(28px,4vw,52px)}
+.fd-case>.fd-case-img{flex:1 1 50%;position:relative;overflow:hidden;background:#e9e8e5;min-height:340px}
+@keyframes fd-spin-rev{to{transform:rotate(-360deg)}}
+.fd-spin-rev{animation:fd-spin-rev 30s linear infinite;transform-origin:50% 50%}
+@media (max-width:860px){.fd-hide-mob{display:none!important}}
+@media (min-width:861px){.fd-hide-desk{display:none!important}}
+@media (max-width:980px){
+[data-screen-label="Hero"]{grid-template-columns:1fr!important}
+.fd-case,.fd-case.rev{flex-direction:column-reverse!important}
+.fd-case>.fd-case-img{min-height:240px!important}
+}
+@media (max-width:760px){
+[data-cards],[data-count-group],.fd-rev{grid-template-columns:1fr!important}
+}
+@media (max-width:560px){
+[data-acc-trigger]{grid-template-columns:auto 1fr auto!important}
+}
+@media (prefers-reduced-motion:reduce){.fd-spin,.fd-spin-rev,.fd-marquee,.fd-ph,.fd-dot-live{animation:none}[data-reveal]{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<div id="fd-root" style="position:relative;background:#EFEEEC;color:#111;font-family:Manrope,system-ui,sans-serif">
+
+<header data-header data-screen-label="Header" style="position:sticky;top:0;z-index:100;border-bottom:1px solid transparent">
+<div style="max-width:1280px;margin:0 auto;padding:18px clamp(20px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+<a href="#top" data-cursor style="display:flex;align-items:center;gap:9px;font-weight:800;font-size:21px;letter-spacing:-.02em">FINDESIGN<span style="width:7px;height:7px;border-radius:50%;background:var(--accent,#9E3490);display:inline-block;margin-bottom:-2px"></span></a>
+<nav class="fd-hide-mob" style="display:flex;align-items:center;gap:clamp(20px,2.4vw,38px);font-size:15px;font-weight:500;color:rgba(17,17,17,.72)">
+<a class="fd-link-u" data-cursor href="#stages">Этапы</a>
+<a class="fd-link-u" data-cursor href="#work">Кейсы</a>
+<a class="fd-link-u" data-cursor href="#pricing">Услуги</a>
+<a class="fd-link-u" data-cursor href="#reviews">Отзывы</a>
+<a class="fd-link-u" data-cursor href="#contact">Контакты</a>
+</nav>
+<div style="display:flex;align-items:center;gap:10px">
+<a class="fd-hide-mob fd-ico" data-cursor href="https://t.me/fin_nik8" target="_blank" rel="noopener" aria-label="Telegram" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(0,0,0,.14);display:grid;place-items:center;color:#111"><span class="fd-pl a" style="display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3 18.9 19.1c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.34-4.79L18.4 6.6c.38-.34-.08-.53-.59-.19L6.8 13.49l-4.66-1.46c-1.01-.31-1.03-1.01.22-1.5L20.63 3.3c.85-.31 1.59.2 1.31 1z"/></svg></span><span class="fd-pl b"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3 18.9 19.1c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.34-4.79L18.4 6.6c.38-.34-.08-.53-.59-.19L6.8 13.49l-4.66-1.46c-1.01-.31-1.03-1.01.22-1.5L20.63 3.3c.85-.31 1.59.2 1.31 1z"/></svg></span></a>
+<a data-magnetic="0.32" data-cursor href="#contact" class="fd-hide-mob fd-darkcta" style="display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:100px;background:#141414;color:#fff;font-weight:600;font-size:15px;will-change:transform">Обсудить<span class="fd-cta-ico" style="font-size:17px">→</span></a>
+<button data-burger aria-label="Меню" class="fd-burger fd-hide-desk" style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(0,0,0,.14);background:transparent;display:grid;justify-items:center;align-content:center;gap:5px;cursor:pointer">
+<span style="display:block;width:22px;height:2px;background:#111;border-radius:2px"></span>
+<span style="display:block;width:22px;height:2px;background:#111;border-radius:2px"></span>
+<span style="display:block;width:22px;height:2px;background:#111;border-radius:2px"></span>
+</button>
+</div>
+</div>
+</header>
+
+<div data-mobile-menu style="position:fixed;inset:0;z-index:90;background:#141414;color:#fff;display:flex;flex-direction:column;justify-content:center;padding:40px clamp(24px,8vw,56px)">
+<nav style="display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:clamp(30px,9vw,46px);letter-spacing:-.02em">
+<a href="#stages">Этапы</a>
+<a href="#work">Кейсы</a>
+<a href="#pricing">Услуги и цены</a>
+<a href="#reviews">Отзывы</a>
+<a href="#contact">Контакты</a>
+</nav>
+<div style="margin-top:44px;display:flex;gap:12px">
+<a href="https://t.me/fin_nik8" target="_blank" rel="noopener" style="flex:1;text-align:center;padding:16px;border-radius:14px;background:var(--accent,#9E3490);font-weight:600">Telegram</a>
+<a href="mailto:finovmarat@gmail.com" style="flex:1;text-align:center;padding:16px;border-radius:14px;background:rgba(255,255,255,.1);font-weight:600">Почта</a>
+</div>
+</div>
+
+<a id="top"></a>
+<section data-screen-label="Hero" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(40px,7vw,86px) clamp(20px,5vw,56px) clamp(40px,6vw,72px);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,72px);align-items:center">
+<div style="min-width:0">
+<div class="fd-eager" style="display:inline-flex;align-items:center;gap:10px;padding:8px 15px;border-radius:100px;background:rgba(40,190,110,.1);font-size:13.5px;font-weight:600;color:#1d7a48;margin-bottom:26px">
+<span class="fd-dot-live" style="width:8px;height:8px;border-radius:50%;background:#28be6e;display:inline-block"></span>Свободен для новых проектов
+</div>
+<h1 class="fd-eager" style="animation-delay:.07s;margin:0;font-weight:600;font-size:clamp(38px,6.4vw,82px);line-height:.98;letter-spacing:-.035em">Сайты, которые<br>превращают<br>посетителей<br>в <span style="color:var(--accent,#9E3490)">клиентов</span></h1>
+<p class="fd-eager" style="animation-delay:.16s;margin:30px 0 0;max-width:480px;font-size:clamp(16px,1.7vw,19px);line-height:1.6;color:rgba(17,17,17,.62)">Разрабатываю сайты под ключ, которые решают задачи бизнеса: привлекают клиентов и повышают конверсию. От идеи и прототипа — до запуска под ключ.</p>
+<div class="fd-eager" style="animation-delay:.24s;margin-top:38px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+<a data-magnetic="0.3" data-cursor href="#contact" class="fd-btn" style="display:inline-flex;align-items:center;gap:14px;padding:9px 9px 9px 28px;border-radius:100px;background:var(--accent,#9E3490);color:#fff;font-weight:600;font-size:16.5px;will-change:transform">Обсудить проект<span class="fd-cta-ico" style="width:38px;height:38px;border-radius:50%;background:#fff;color:var(--accent,#9E3490);display:grid;place-items:center;font-size:18px">→</span></a>
+<a data-cursor href="#work" class="fd-ghost" style="display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:100px;border:1px solid rgba(0,0,0,.18);font-weight:600;font-size:16.5px">Смотреть работы</a>
+</div>
+<div class="fd-eager" style="animation-delay:.32s;margin-top:34px;display:flex;align-items:center;gap:13px;color:rgba(17,17,17,.55);font-size:14px">
+<span style="letter-spacing:1px;color:#E8B931">★★★★★</span><span><b style="color:#111">5.0</b> — рейтинг на Профи.ру и Avito</span>
+</div>
+</div>
+<div style="position:relative;display:grid;place-items:center;overflow:visible">
+<div data-parallax="0.06" style="position:relative;width:min(100%,460px);aspect-ratio:1;transform:translateY(var(--ply,0px))">
+<svg class="fd-spin" viewBox="0 0 460 460" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible">
+<defs><path id="fdring" fill="none" d="M230,230 m-188,0 a188,188 0 1,1 376,0 a188,188 0 1,1 -376,0"></path></defs>
+<text style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;letter-spacing:2.5px;fill:rgba(17,17,17,.85);text-transform:uppercase"><textPath href="#fdring" startOffset="0" textLength="1181" lengthAdjust="spacing">разработка сайтов под ключ <tspan style="fill:var(--accent,#9E3490)">•</tspan> веб-дизайн <tspan style="fill:var(--accent,#9E3490)">•</tspan> ваш бизнес в сети <tspan style="fill:var(--accent,#9E3490)">•</tspan> новый канал продаж <tspan style="fill:var(--accent,#9E3490)">•</tspan> современный дизайн <tspan style="fill:var(--accent,#9E3490)">•</tspan> </textPath></text>
+</svg>
+<div style="position:absolute;inset:13%;border-radius:50%;overflow:hidden;background:#dcdad6;box-shadow:0 30px 70px -30px rgba(0,0,0,.45)">
+<img src="images/hero.jpg" alt="Марат — веб-дизайнер и разработчик" style="width:100%;height:100%;object-fit:cover;object-position:50% 24%">
+</div>
+<div style="position:absolute;left:-3%;bottom:7%;background:#141414;color:#fff;padding:14px 20px;border-radius:18px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)">
+<div style="font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:600;margin-bottom:4px">Меня зовут</div>
+<div style="font-size:19px;font-weight:700;letter-spacing:-.01em;line-height:1">Марат</div>
+<div style="margin-top:7px;display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:rgba(255,255,255,.78)"><span>веб-дизайнер</span><span style="width:6px;height:6px;border-radius:50%;background:var(--accent,#9E3490);display:inline-block;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent,#9E3490) 28%,transparent)"></span><span>разработчик</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="overflow:hidden;background:#141414;color:#F4F3F1;padding:clamp(18px,2.4vw,26px) 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)">
+<div class="fd-marquee" style="display:flex;white-space:nowrap;width:max-content">
+<div style="display:flex;align-items:center;font-weight:600;font-size:clamp(22px,3vw,40px);letter-spacing:-.01em">
+<span style="padding:0 26px">Разработка сайтов под ключ</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Веб-дизайн</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Ваш бизнес в сети</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Новый канал продаж</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Современный дизайн</span><span style="color:var(--accent,#9E3490)">✦</span>
+</div>
+<div style="display:flex;align-items:center;font-weight:600;font-size:clamp(22px,3vw,40px);letter-spacing:-.01em" aria-hidden="true">
+<span style="padding:0 26px">Разработка сайтов под ключ</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Веб-дизайн</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Ваш бизнес в сети</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Новый канал продаж</span><span style="color:var(--accent,#9E3490)">✦</span><span style="padding:0 26px">Современный дизайн</span><span style="color:var(--accent,#9E3490)">✦</span>
+</div>
+</div>
+</div>
+
+<section id="stages" data-screen-label="Этапы работы" style="background:#141414;color:#F4F3F1;scroll-margin-top:90px;padding:clamp(64px,9vw,128px) 0">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+<div data-reveal style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:clamp(40px,5vw,68px)">
+<h2 style="margin:0;font-weight:600;font-size:clamp(34px,5.4vw,72px);letter-spacing:-.03em;line-height:1">Этапы работы</h2>
+<span style="font-family:Inter,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.42)">[ как я работаю ]</span>
+</div>
+<div data-stages>
+<div data-acc class="is-open" style="border-top:1px solid rgba(255,255,255,.14)">
+<button data-acc-trigger data-cursor style="width:100%;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,46px);align-items:center;padding:clamp(22px,3vw,34px) 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer">
+<span style="font-family:Inter,sans-serif;font-weight:500;font-size:clamp(13px,1.3vw,15px);color:var(--accent,#9E3490);min-width:34px">01</span>
+<span style="font-weight:500;font-size:clamp(18px,2.5vw,32px);letter-spacing:-.015em">обсуждение проекта</span>
+<span class="fd-plus"></span>
+</button>
+<div class="fd-acc-body"><div class="fd-acc-inner"><p style="margin:0;padding:0 0 clamp(24px,3vw,36px) clamp(50px,8vw,80px);max-width:680px;font-size:clamp(14.5px,1.5vw,17px);line-height:1.65;color:rgba(255,255,255,.6)">Созваниваемся, разбираю вашу задачу, цели и аудиторию. Фиксирую, каким должен быть результат и что важно показать клиенту.</p></div></div>
+</div>
+<div data-acc style="border-top:1px solid rgba(255,255,255,.14)">
+<button data-acc-trigger data-cursor style="width:100%;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,46px);align-items:center;padding:clamp(22px,3vw,34px) 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer">
+<span style="font-family:Inter,sans-serif;font-weight:500;font-size:clamp(13px,1.3vw,15px);color:var(--accent,#9E3490);min-width:34px">02</span>
+<span style="font-weight:500;font-size:clamp(18px,2.5vw,32px);letter-spacing:-.015em">договор и оплата</span>
+<span class="fd-plus"></span>
+</button>
+<div class="fd-acc-body"><div class="fd-acc-inner"><p style="margin:0;padding:0 0 clamp(24px,3vw,36px) clamp(50px,8vw,80px);max-width:680px;font-size:clamp(14.5px,1.5vw,17px);line-height:1.65;color:rgba(255,255,255,.6)">Согласовываем объём, сроки и стоимость. Заключаем договор и вносим предоплату — после этого я приступаю к работе.</p></div></div>
+</div>
+<div data-acc style="border-top:1px solid rgba(255,255,255,.14)">
+<button data-acc-trigger data-cursor style="width:100%;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,46px);align-items:center;padding:clamp(22px,3vw,34px) 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer">
+<span style="font-family:Inter,sans-serif;font-weight:500;font-size:clamp(13px,1.3vw,15px);color:var(--accent,#9E3490);min-width:34px">03</span>
+<span style="font-weight:500;font-size:clamp(18px,2.5vw,32px);letter-spacing:-.015em">референсы и прототип</span>
+<span class="fd-plus"></span>
+</button>
+<div class="fd-acc-body"><div class="fd-acc-inner"><p style="margin:0;padding:0 0 clamp(24px,3vw,36px) clamp(50px,8vw,80px);max-width:680px;font-size:clamp(14.5px,1.5vw,17px);line-height:1.65;color:rgba(255,255,255,.6)">Собираю референсы, продумываю структуру и прототип будущего сайта — чтобы заранее увидеть логику страниц и расположение блоков.</p></div></div>
+</div>
+<div data-acc style="border-top:1px solid rgba(255,255,255,.14)">
+<button data-acc-trigger data-cursor style="width:100%;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,46px);align-items:center;padding:clamp(22px,3vw,34px) 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer">
+<span style="font-family:Inter,sans-serif;font-weight:500;font-size:clamp(13px,1.3vw,15px);color:var(--accent,#9E3490);min-width:34px">04</span>
+<span style="font-weight:500;font-size:clamp(18px,2.5vw,32px);letter-spacing:-.015em">презентация дизайна</span>
+<span class="fd-plus"></span>
+</button>
+<div class="fd-acc-body"><div class="fd-acc-inner"><p style="margin:0;padding:0 0 clamp(24px,3vw,36px) clamp(50px,8vw,80px);max-width:680px;font-size:clamp(14.5px,1.5vw,17px);line-height:1.65;color:rgba(255,255,255,.6)">Показываю готовый дизайн-макет, объясняю принятые решения и вношу правки, пока результат не устроит вас полностью.</p></div></div>
+</div>
+<div data-acc style="border-top:1px solid rgba(255,255,255,.14)">
+<button data-acc-trigger data-cursor style="width:100%;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,46px);align-items:center;padding:clamp(22px,3vw,34px) 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer">
+<span style="font-family:Inter,sans-serif;font-weight:500;font-size:clamp(13px,1.3vw,15px);color:var(--accent,#9E3490);min-width:34px">05</span>
+<span style="font-weight:500;font-size:clamp(18px,2.5vw,32px);letter-spacing:-.015em">вёрстка проекта</span>
+<span class="fd-plus"></span>
+</button>
+<div class="fd-acc-body"><div class="fd-acc-inner"><p style="margin:0;padding:0 0 clamp(24px,3vw,36px) clamp(50px,8vw,80px);max-width:680px;font-size:clamp(14.5px,1.5vw,17px);line-height:1.65;color:rgba(255,255,255,.6)">Собираю сайт при помощи кода и современных нейросетей: адаптив под мобильные, анимации, формы и интеграции. Всё работает и выглядит точно как в макете.</p></div></div>
+</div>
+<div data-acc style="border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)">
+<button data-acc-trigger data-cursor style="width:100%;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(16px,3vw,46px);align-items:center;padding:clamp(22px,3vw,34px) 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer">
+<span style="font-family:Inter,sans-serif;font-weight:500;font-size:clamp(13px,1.3vw,15px);color:var(--accent,#9E3490);min-width:34px">06</span>
+<span style="font-weight:500;font-size:clamp(18px,2.5vw,32px);letter-spacing:-.015em">финальные настройки и передача проекта</span>
+<span class="fd-plus"></span>
+</button>
+<div class="fd-acc-body"><div class="fd-acc-inner"><p style="margin:0;padding:0 0 clamp(24px,3vw,36px) clamp(50px,8vw,80px);max-width:680px;font-size:clamp(14.5px,1.5vw,17px);line-height:1.65;color:rgba(255,255,255,.6)">Подключаю домен, аналитику и формы заявок, проверяю на всех устройствах и передаю готовый проект вам в руки.</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="work" data-screen-label="Кейсы" style="background:#EFEEEC;scroll-margin-top:90px;padding:clamp(64px,9vw,128px) 0">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+<div data-reveal style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:clamp(40px,5vw,68px)">
+<h2 style="margin:0;font-weight:600;font-size:clamp(34px,5.4vw,72px);letter-spacing:-.03em;line-height:1">Мои последние<br>проекты</h2>
+<span style="font-family:Inter,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;color:rgba(17,17,17,.42)">[ портфолио ]</span>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:26px">
+
+<div data-reveal data-tilt="4" data-cursor class="fd-case" style="background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(0,0,0,.25);will-change:transform">
+<div class="fd-case-txt">
+<div>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:20px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:6px 12px;border-radius:100px">лендинг</span><span style="font-size:13px;color:rgba(17,17,17,.4)">Tilda</span></div>
+<h3 style="margin:0 0 14px;font-weight:600;font-size:clamp(24px,3vw,38px);letter-spacing:-.02em;line-height:1.05">Медицинская клиника</h3>
+<p style="margin:0;max-width:440px;font-size:clamp(14.5px,1.5vw,16.5px);line-height:1.6;color:rgba(17,17,17,.58)">Редизайн сайта и верстка на Tilda. Добавлены органичные анимации, подсвечивающие важные для клиента моменты.</p>
+</div>
+<a href="https://truemedcare.ru" target="_blank" rel="noopener" data-cursor class="fd-arrow" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:#111;align-self:flex-start">смотреть<span class="fd-cta-ico" style="width:34px;height:34px;border-radius:50%;background:#141414;color:#fff;display:grid;place-items:center;font-size:15px">→</span></a>
+</div>
+<div class="fd-case-img"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-3.jpg" alt="True Medical Care — клиника" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone" loading="lazy" decoding="async" src="images/phone-clinic.png" alt="" aria-hidden="true"></div>
+</div>
+
+<div data-cards style="display:grid;grid-template-columns:1fr 1fr;gap:26px">
+
+<div data-reveal data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-1.jpg" alt="Свежая вода — доставка воды" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone" loading="lazy" decoding="async" src="images/phone-water.png" alt="" aria-hidden="true"></div>
+<div style="padding:clamp(22px,2.6vw,32px)">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
+<h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Доставка воды из скважины</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Разработка дизайна и верстка сайта на Tilda. Реализована кастомная форма заказа воды прямо на сайте.</p>
+</div>
+</div>
+
+<div data-reveal data-reveal-delay="90" data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-2.jpg" alt="ALFERRA — агентство" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone" loading="lazy" decoding="async" src="images/phone-alferra.png" alt="" aria-hidden="true"></div>
+<div style="padding:clamp(22px,2.6vw,32px)">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
+<h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Агентство стратегического развития</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Разработка дизайна и верстка сайта на Tilda. Реализована кастомная форма обратной связи.</p>
+</div>
+</div>
+
+<div data-reveal data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-licenses.jpg" alt="ВЕРА ГРУПП — оформление лицензий" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone" loading="lazy" decoding="async" src="images/phone-licenses.png" alt="" aria-hidden="true"></div>
+<div style="padding:clamp(22px,2.6vw,32px)">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
+<h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Оформление лицензий</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Разработка дизайна и верстка сайта на Tilda. Реализована кастомная форма обратной связи.</p>
+</div>
+</div>
+
+<div data-reveal data-reveal-delay="90" data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-ceilings.jpg" alt="COMFORT SPACE — натяжные потолки" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone" loading="lazy" decoding="async" src="images/phone-ceilings.png" alt="" aria-hidden="true"></div>
+<div style="padding:clamp(22px,2.6vw,32px)">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
+<h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Установка натяжных потолков</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Разработка уникального дизайна для фирмы натяжных потолков и верстка на Tilda.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="pricing" data-screen-label="Услуги и цены" style="background:#141414;color:#F4F3F1;scroll-margin-top:90px;padding:clamp(64px,9vw,128px) 0">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+<div data-reveal style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:clamp(40px,5vw,68px)">
+<h2 style="margin:0;font-weight:600;font-size:clamp(34px,5.4vw,72px);letter-spacing:-.03em;line-height:1">Стоимость и сроки</h2>
+<span style="font-family:Inter,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.42)">[ цены и сроки ]</span>
+</div>
+<div data-count-group style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div data-reveal data-cursor style="background:#1c1c1c;border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:clamp(26px,3.2vw,42px);display:flex;flex-direction:column;gap:clamp(28px,4vw,52px);min-height:300px">
+<div>
+<h3 style="margin:0 0 12px;font-weight:600;font-size:clamp(21px,2.4vw,28px);letter-spacing:-.01em">Лендинг</h3>
+<p style="margin:0;max-width:440px;font-size:15px;line-height:1.6;color:rgba(255,255,255,.55)">Одностраничный сайт, призывающий пользователя к целевому действию — оставить заявку или связаться. Отлично раскрывает вашу услугу или продукт.</p>
+</div>
+<div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+<div style="font-weight:600;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em">от <span data-count="50000">50 000</span> ₽</div>
+<div style="font-size:15px;color:rgba(255,255,255,.5)">от <span data-count="14">14</span> дней</div>
+</div>
+</div>
+<div data-reveal data-reveal-delay="80" data-cursor style="background:#1c1c1c;border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:clamp(26px,3.2vw,42px);display:flex;flex-direction:column;gap:clamp(28px,4vw,52px);min-height:300px">
+<div>
+<h3 style="margin:0 0 12px;font-weight:600;font-size:clamp(21px,2.4vw,28px);letter-spacing:-.01em">Многостраничный сайт</h3>
+<p style="margin:0;max-width:440px;font-size:15px;line-height:1.6;color:rgba(255,255,255,.55)">Полноценный сайт для бизнеса с логичной структурой и несколькими страницами. Подходит для компаний, брендов и экспертов.</p>
+</div>
+<div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+<div style="font-weight:600;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em">от <span data-count="80000">80 000</span> ₽</div>
+<div style="font-size:15px;color:rgba(255,255,255,.5)">от <span data-count="20">20</span> дней</div>
+</div>
+</div>
+<div data-reveal data-cursor style="background:#1c1c1c;border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:clamp(26px,3.2vw,42px);display:flex;flex-direction:column;gap:clamp(28px,4vw,52px);min-height:300px">
+<div>
+<h3 style="margin:0 0 12px;font-weight:600;font-size:clamp(21px,2.4vw,28px);letter-spacing:-.01em">Интернет-магазин</h3>
+<p style="margin:0;max-width:440px;font-size:15px;line-height:1.6;color:rgba(255,255,255,.55)">Сайт с каталогом товаров, корзиной и онлайн-оплатой. Подходит для продаж физических или цифровых продуктов.</p>
+</div>
+<div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+<div style="font-weight:600;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em">от <span data-count="110000">110 000</span> ₽</div>
+<div style="font-size:15px;color:rgba(255,255,255,.5)">от <span data-count="28">28</span> дней</div>
+</div>
+</div>
+<div data-reveal data-reveal-delay="80" data-cursor style="background:linear-gradient(135deg,var(--accent,#9E3490),color-mix(in srgb,var(--accent,#9E3490) 60%,#000));border-radius:24px;padding:clamp(26px,3.2vw,42px);display:flex;flex-direction:column;gap:clamp(28px,4vw,52px);min-height:300px;color:#fff">
+<div>
+<h3 style="margin:0 0 12px;font-weight:600;font-size:clamp(21px,2.4vw,28px);letter-spacing:-.01em">Другое</h3>
+<p style="margin:0;max-width:440px;font-size:15px;line-height:1.6;color:rgba(255,255,255,.8)">Редизайн, отдельные страницы, нестандартные проекты и индивидуальные задачи.</p>
+</div>
+<div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
+<div style="font-weight:600;font-size:clamp(19px,2vw,24px);letter-spacing:-.01em">Стоимость и сроки —<br>индивидуально</div>
+<a data-cursor href="#contact" class="fd-circarrow" style="display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#fff;color:#111;font-size:18px;flex:none">→</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reviews" data-screen-label="Отзывы" style="background:#EFEEEC;scroll-margin-top:90px;padding:clamp(64px,9vw,128px) 0">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+<div data-reveal style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:clamp(40px,5vw,68px)">
+<h2 style="margin:0;font-weight:600;font-size:clamp(30px,5vw,66px);letter-spacing:-.03em;line-height:1">Что говорят о<br>работе со мной</h2>
+<span style="font-family:Inter,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;color:rgba(17,17,17,.42)">[ отзывы ]</span>
+</div>
+<div class="fd-rev" style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+<div data-reveal data-cursor style="background:#fff;border-radius:24px;padding:clamp(26px,3vw,38px);box-shadow:0 24px 50px -42px rgba(0,0,0,.3)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px">
+<span style="font-weight:700;font-size:16px">профи<span style="color:var(--accent,#9E3490)">.ру</span></span>
+<span style="letter-spacing:1px;color:#E8B931;font-size:14px">★★★★★</span>
+</div>
+<div style="margin-bottom:8px;font-weight:700;font-size:19px">Алиса</div>
+<div style="margin-bottom:18px;font-size:13px;color:rgba(17,17,17,.45)">Landing page · Создание сайтов</div>
+<p style="margin:0;font-size:15px;line-height:1.66;color:rgba(17,17,17,.7)">Лучший опыт работы со специалистом по созданию сайтов. С первого раза попадание точно в то, что я просила — никаких правок не потребовалось, человек с великолепным вкусом. Всё сделано максимально оперативно. И главное — никаких лишних вопросов, всё чётко и по делу.</p>
+</div>
+<div data-reveal data-reveal-delay="80" data-cursor style="background:#fff;border-radius:24px;padding:clamp(26px,3vw,38px);box-shadow:0 24px 50px -42px rgba(0,0,0,.3)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px">
+<span style="font-weight:700;font-size:16px">профи<span style="color:var(--accent,#9E3490)">.ру</span></span>
+<span style="letter-spacing:1px;color:#E8B931;font-size:14px">★★★★★</span>
+</div>
+<div style="margin-bottom:8px;font-weight:700;font-size:19px">Виктория</div>
+<div style="margin-bottom:18px;font-size:13px;color:rgba(17,17,17,.45)">Корпоративный сайт · Создание сайта</div>
+<p style="margin:0;font-size:15px;line-height:1.66;color:rgba(17,17,17,.7)">Мы с Маратом сделали уже два сайта! Очень крутой специалист — всё быстро, от структуры до мельчайших деталей дизайна выполнено с умом, вкусом и вниманием. Сайты получились не только красивыми, но и удобными, лёгкими и быстрыми. Рекомендую!</p>
+</div>
+<div data-reveal data-cursor style="background:#fff;border-radius:24px;padding:clamp(26px,3vw,38px);box-shadow:0 24px 50px -42px rgba(0,0,0,.3)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px">
+<img loading="lazy" decoding="async" src="images/logo-badge.png" alt="Avito" style="height:21px;width:auto">
+<span style="letter-spacing:1px;color:#E8B931;font-size:14px">★★★★★</span>
+</div>
+<div style="margin-bottom:8px;font-weight:700;font-size:19px">Игорь Владимирович</div>
+<div style="margin-bottom:18px;font-size:13px;color:rgba(17,17,17,.45)">Создание сайта</div>
+<p style="margin:0;font-size:15px;line-height:1.66;color:rgba(17,17,17,.7)">Заказывал лендинг под услуги. Сделали быстро и аккуратно, сайт получился чистым и понятным. Марат всегда на связи, помог со структурой и правками. Рекомендую.</p>
+</div>
+<div data-reveal data-reveal-delay="80" data-cursor style="background:#fff;border-radius:24px;padding:clamp(26px,3vw,38px);box-shadow:0 24px 50px -42px rgba(0,0,0,.3)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px">
+<img loading="lazy" decoding="async" src="images/logo-badge.png" alt="Avito" style="height:21px;width:auto">
+<span style="letter-spacing:1px;color:#E8B931;font-size:14px">★★★★★</span>
+</div>
+<div style="margin-bottom:8px;font-weight:700;font-size:19px">Дмитрий</div>
+<div style="margin-bottom:18px;font-size:13px;color:rgba(17,17,17,.45)">Создание сайта · лендинг</div>
+<p style="margin:0;font-size:15px;line-height:1.66;color:rgba(17,17,17,.7)">Делал сайт-визитку — всё чётко и по делу, сроки соблюдены, постоянно на связи. Результат очень понравился, обязательно вернусь с новыми задачами.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" data-screen-label="Контакты" style="background:#141414;color:#F4F3F1;scroll-margin-top:90px;padding:clamp(72px,11vw,150px) 0">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px)">
+<div data-reveal style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:0">
+<h2 style="margin:0;font-weight:600;font-size:clamp(38px,7vw,96px);letter-spacing:-.035em;line-height:.98;max-width:14ch">Пора обсудить ваш проект</h2>
+<span style="font-family:Inter,sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.42);white-space:nowrap;margin-top:10px">[ контакты ]</span>
+</div>
+<p data-reveal data-reveal-delay="120" style="margin:28px 0 0;max-width:520px;font-size:clamp(16px,1.8vw,20px);line-height:1.55;color:rgba(255,255,255,.6)">Свяжитесь со мной удобным для вас способом по кнопкам ниже — отвечу и помогу определиться с задачей.</p>
+<div data-reveal data-reveal-delay="220" style="margin-top:44px;display:flex;flex-wrap:wrap;gap:14px">
+<a data-magnetic="0.3" data-cursor href="https://t.me/fin_nik8" target="_blank" rel="noopener" class="fd-btn" style="display:inline-flex;align-items:center;gap:12px;padding:18px 30px;border-radius:100px;background:var(--accent,#9E3490);color:#fff;font-weight:600;font-size:16.5px;will-change:transform"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3 18.9 19.1c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.34-4.79L18.4 6.6c.38-.34-.08-.53-.59-.19L6.8 13.49l-4.66-1.46c-1.01-.31-1.03-1.01.22-1.5L20.63 3.3c.85-.31 1.59.2 1.31 1z"/></svg>Telegram</a>
+<a data-cursor href="mailto:finovmarat@gmail.com" class="fd-ghost-d" style="display:inline-flex;align-items:center;gap:12px;padding:18px 30px;border-radius:100px;border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:600;font-size:16.5px">Написать на почту</a>
+</div>
+</div>
+</section>
+
+<footer style="background:#0e0e0e;color:rgba(255,255,255,.6);padding:clamp(40px,5vw,64px) 0">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px">
+<a href="#top" style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:20px;letter-spacing:-.02em;color:#fff">FINDESIGN<span style="width:6px;height:6px;border-radius:50%;background:var(--accent,#9E3490);display:inline-block;margin-bottom:-2px"></span></a>
+<div style="font-size:14px">Веб-дизайн и разработка сайтов под ключ</div>
+<div style="display:flex;gap:22px;font-size:14px">
+<a class="fd-link-u" data-cursor href="https://t.me/fin_nik8" target="_blank" rel="noopener">Telegram</a>
+<a class="fd-link-u" data-cursor href="mailto:finovmarat@gmail.com">Почта</a>
+</div>
+<div style="font-size:13px;color:rgba(255,255,255,.35);width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:22px;margin-top:8px">© 2026 FINDESIGN · сделано с любовью к деталям</div>
+</div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+"use strict";
+class DCLogic{setState(){}forceUpdate(){}}
+class Component extends DCLogic {
+  componentDidMount() {
+    this.root = document.getElementById('fd-root');
+    this.cleanup = [];
+    this._motionCleanups = [];
+    this._motionOn = false;
+    this.applyAccent();
+    if (!this.root) return;
+    this.setupHeader();
+    this.setupReveal();
+    this.setupCounters();
+    this.setupAccordion();
+    this.setupMobileMenu();
+    this.setupRing();
+    this.applyToggles();
+  }
+  componentDidUpdate() {
+    this.applyAccent();
+    this.applyToggles();
+  }
+  componentWillUnmount() {
+    (this.cleanup || []).forEach(fn => { try { fn(); } catch (e) {} });
+    this.disableMotion();
+    this.removeCursor();
+    if (this._menuLocked) document.body.style.overflow = '';
+  }
+  get reduce() { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+  get fine() { return window.matchMedia('(pointer: fine)').matches; }
+
+  applyAccent() {
+    const a = this.props.accent || '#9E3490';
+    const r = this.root || document.getElementById('fd-root');
+    if (r) r.style.setProperty('--accent', a);
+  }
+
+  setupHeader() {
+    const header = this.root.querySelector('[data-header]');
+    if (!header) return;
+    const onScroll = () => header.classList.toggle('is-stuck', window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    this.cleanup.push(() => window.removeEventListener('scroll', onScroll));
+  }
+
+  setupReveal() {
+    const els = [...this.root.querySelectorAll('[data-reveal]')];
+    if (this.reduce) { els.forEach(e => e.classList.add('is-visible')); return; }
+    let pending = els.slice();
+    let raf = null;
+    const check = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      pending = pending.filter(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.9 && r.bottom > -40) {
+          const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+          setTimeout(() => el.classList.add('is-visible'), d);
+          return false;
+        }
+        return true;
+      });
+      if (!pending.length) { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); }
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = null; check(); }); };
+    check();
+    requestAnimationFrame(check);
+    [120, 320, 700, 1300].forEach(t => setTimeout(check, t));
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    this.cleanup.push(() => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if (raf) cancelAnimationFrame(raf); });
+  }
+
+  setupCounters() {
+    const groups = [...this.root.querySelectorAll('[data-count-group]')];
+    if (!groups.length || this.reduce) return;
+    let pending = groups.slice();
+    let raf = null;
+    const check = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      pending = pending.filter(g => {
+        const r = g.getBoundingClientRect();
+        if (r.top < vh * 0.85 && r.bottom > 0) { this.runCounters(g); return false; }
+        return true;
+      });
+      if (!pending.length) { window.removeEventListener('scroll', onScroll); }
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = null; check(); }); };
+    check();
+    setTimeout(check, 240);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    this.cleanup.push(() => { window.removeEventListener('scroll', onScroll); if (raf) cancelAnimationFrame(raf); });
+  }
+
+  runCounters(scope) {
+    const nums = [...scope.querySelectorAll('[data-count]')];
+    nums.forEach(el => {
+      const target = parseFloat(el.getAttribute('data-count')) || 0;
+      const dur = 1500;
+      const start = performance.now();
+      const fmt = n => Math.round(n).toLocaleString('ru-RU');
+      const tick = (t) => {
+        const p = Math.min(1, (t - start) / dur);
+        const e = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmt(target * e);
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = fmt(target);
+      };
+      requestAnimationFrame(tick);
+    });
+  }
+
+  setupAccordion() {
+    const triggers = [...this.root.querySelectorAll('[data-acc-trigger]')];
+    triggers.forEach(btn => {
+      const item = btn.closest('[data-acc]');
+      const handler = () => {
+        const open = item.classList.contains('is-open');
+        triggers.forEach(b => { const it = b.closest('[data-acc]'); if (it) it.classList.remove('is-open'); });
+        if (!open) item.classList.add('is-open');
+      };
+      btn.addEventListener('click', handler);
+      this.cleanup.push(() => btn.removeEventListener('click', handler));
+    });
+  }
+
+  setupMobileMenu() {
+    const burger = this.root.querySelector('[data-burger]');
+    const menu = this.root.querySelector('[data-mobile-menu]');
+    if (!burger || !menu) return;
+    const lock = (on) => { this._menuLocked = on; document.body.style.overflow = on ? 'hidden' : ''; };
+    const close = () => { this.root.classList.remove('menu-open'); lock(false); };
+    const toggle = () => { const open = this.root.classList.toggle('menu-open'); lock(open); };
+    burger.addEventListener('click', toggle);
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    this.cleanup.push(() => { burger.removeEventListener('click', toggle); lock(false); });
+  }
+
+  setupRing() {
+    const path = this.root.querySelector('#fdring');
+    const tp = this.root.querySelector('.fd-spin textPath');
+    if (!path || !tp || !path.getTotalLength) return;
+    const fit = () => {
+      const L = path.getTotalLength();
+      if (L > 0) { tp.setAttribute('textLength', L.toFixed(1)); tp.setAttribute('lengthAdjust', 'spacing'); }
+    };
+    fit();
+    requestAnimationFrame(fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit).catch(() => {});
+  }
+
+  applyToggles() {
+    const wantCursor = (this.props.customCursor !== false) && this.fine && !this.reduce;
+    if (wantCursor) this.addCursor(); else this.removeCursor();
+    const wantMotion = (this.props.motionEnabled !== false) && !this.reduce && this.fine;
+    if (wantMotion && !this._motionOn) { this.enableMotion(); this._motionOn = true; }
+    else if (!wantMotion && this._motionOn) { this.disableMotion(); this._motionOn = false; }
+  }
+
+  addCursor() {
+    if (this._cursorEls || !this.root) return;
+    const dot = document.createElement('div'); dot.className = 'fd-cursor-dot';
+    const ring = document.createElement('div'); ring.className = 'fd-cursor-ring';
+    this.root.appendChild(dot); this.root.appendChild(ring);
+    this._cursorEls = [dot, ring];
+    let x = innerWidth / 2, y = innerHeight / 2, rx = x, ry = y;
+    const move = (e) => { x = e.clientX; y = e.clientY; dot.style.transform = `translate(${x}px,${y}px)`; };
+    const loop = () => { rx += (x - rx) * .18; ry += (y - ry) * .18; ring.style.transform = `translate(${rx}px,${ry}px)`; this._raf = requestAnimationFrame(loop); };
+    const over = (e) => { if (e.target.closest && e.target.closest('a,button,[data-cursor]')) this.root.classList.add('cursor-active'); };
+    const out = (e) => { if (e.target.closest && e.target.closest('a,button,[data-cursor]')) this.root.classList.remove('cursor-active'); };
+    window.addEventListener('mousemove', move, { passive: true });
+    this.root.addEventListener('mouseover', over);
+    this.root.addEventListener('mouseout', out);
+    loop();
+    this.root.classList.add('has-cursor');
+    this._cursorCleanup = () => {
+      window.removeEventListener('mousemove', move);
+      this.root.removeEventListener('mouseover', over);
+      this.root.removeEventListener('mouseout', out);
+      cancelAnimationFrame(this._raf);
+    };
+  }
+
+  removeCursor() {
+    if (!this._cursorEls) return;
+    this._cursorEls.forEach(el => el.remove());
+    this._cursorEls = null;
+    if (this.root) this.root.classList.remove('has-cursor', 'cursor-active');
+    if (this._cursorCleanup) { this._cursorCleanup(); this._cursorCleanup = null; }
+  }
+
+  enableMotion() {
+    this._motionCleanups = [];
+    this.root.querySelectorAll('[data-magnetic]').forEach(el => {
+      const strength = parseFloat(el.getAttribute('data-magnetic')) || 0.3;
+      const move = (e) => {
+        const r = el.getBoundingClientRect();
+        const mx = e.clientX - (r.left + r.width / 2);
+        const my = e.clientY - (r.top + r.height / 2);
+        el.style.transform = `translate(${(mx * strength).toFixed(1)}px,${(my * strength).toFixed(1)}px)`;
+      };
+      const leave = () => { el.style.transform = 'translate(0,0)'; };
+      el.addEventListener('mousemove', move);
+      el.addEventListener('mouseleave', leave);
+      this._motionCleanups.push(() => { el.removeEventListener('mousemove', move); el.removeEventListener('mouseleave', leave); el.style.transform = ''; });
+    });
+    this.root.querySelectorAll('[data-tilt]').forEach(card => {
+      const max = parseFloat(card.getAttribute('data-tilt')) || 5;
+      const move = (e) => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - .5;
+        const py = (e.clientY - r.top) / r.height - .5;
+        card.style.transform = `perspective(1100px) rotateY(${(px * max).toFixed(2)}deg) rotateX(${(-py * max).toFixed(2)}deg)`;
+      };
+      const leave = () => { card.style.transform = 'perspective(1100px) rotateY(0deg) rotateX(0deg)'; };
+      card.addEventListener('mousemove', move);
+      card.addEventListener('mouseleave', leave);
+      this._motionCleanups.push(() => { card.removeEventListener('mousemove', move); card.removeEventListener('mouseleave', leave); card.style.transform = ''; });
+    });
+    const plx = [...this.root.querySelectorAll('[data-parallax]')];
+    if (plx.length) {
+      let raf = null;
+      const update = () => {
+        raf = null;
+        const vh = window.innerHeight;
+        plx.forEach(el => {
+          const speed = parseFloat(el.getAttribute('data-parallax')) || 0.08;
+          const r = el.getBoundingClientRect();
+          const center = r.top + r.height / 2 - vh / 2;
+          el.style.setProperty('--ply', `${(-center * speed).toFixed(1)}px`);
+        });
+      };
+      const onScroll = () => { if (!raf) raf = requestAnimationFrame(update); };
+      update();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
+      this._motionCleanups.push(() => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if (raf) cancelAnimationFrame(raf); plx.forEach(el => el.style.removeProperty('--ply')); });
+    }
+  }
+
+  disableMotion() {
+    (this._motionCleanups || []).forEach(fn => { try { fn(); } catch (e) {} });
+    this._motionCleanups = [];
+  }
+
+  renderVals() { return {}; }
+}
+var app=new Component();
+app.props={accent:"#9E3490",customCursor:true,motionEnabled:true};
+function boot(){try{app.componentDidMount();}catch(e){console.error(e);}}
+if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",boot);}else{boot();}
+})();
+</script>
+</body>
+</html>
