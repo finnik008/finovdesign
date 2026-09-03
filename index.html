@@ -80,12 +80,10 @@ button{font-family:inherit}
 [data-tilt]{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 [data-tilt-img]{transform:translateY(var(--ply,0px)) scale(1.05);transition:transform .6s cubic-bezier(.2,.7,.2,1);will-change:transform}
 [data-tilt]:hover [data-tilt-img]{transform:translateY(var(--ply,0px)) scale(1.12)}
-.fd-phone{position:absolute;bottom:-7%;height:58%;width:auto;pointer-events:none;opacity:0;transform:translateY(22%) scale(.94);transition:opacity .5s cubic-bezier(.2,.8,.2,1),transform .65s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 16px 26px rgba(0,0,0,.42));z-index:4;will-change:transform,opacity}
-.fd-phone-left{left:4%}
-.fd-phone-right{right:4%}
-.fd-case-img .fd-phone{height:66%}
-.fd-case-img .fd-phone-left{left:7%}
-.fd-case-img .fd-phone-right{right:7%}
+.fd-phone{position:absolute;bottom:-7%;height:72%;width:auto;pointer-events:none;opacity:0;transform:translateY(22%) scale(.94);transition:opacity .5s cubic-bezier(.2,.8,.2,1),transform .65s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 16px 26px rgba(0,0,0,.42));z-index:4;will-change:transform,opacity}
+.fd-phone-right{right:3%}
+.fd-case-img .fd-phone{height:80%}
+.fd-case-img .fd-phone-right{right:4%}
 [data-tilt]:hover .fd-phone{opacity:1;transform:translateY(0) scale(1)}
 @media (hover:none),(max-width:980px){.fd-phone{display:block;opacity:1;transform:translateY(0) scale(1)}}
 .fd-cursor-dot,.fd-cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;border-radius:50%;mix-blend-mode:difference;will-change:transform}
@@ -147,9 +145,8 @@ button{font-family:inherit}
 }
 @media (max-width:560px){
 [data-acc-trigger]{grid-template-columns:auto 1fr auto!important}
-.fd-phone{height:52%;bottom:-4%}
-.fd-case-img .fd-phone{height:58%}
-.fd-phone-left,.fd-case-img .fd-phone-left{left:1.5%}
+.fd-phone{height:64%;bottom:-4%}
+.fd-case-img .fd-phone{height:72%}
 .fd-phone-right,.fd-case-img .fd-phone-right{right:1.5%}
 }
 @media (prefers-reduced-motion:reduce){.fd-spin,.fd-spin-rev,.fd-marquee,.fd-ph,.fd-dot-live{animation:none}[data-reveal]{opacity:1;transform:none}}
@@ -321,13 +318,13 @@ button{font-family:inherit}
 </div>
 <a href="https://truemedcare.ru" target="_blank" rel="noopener" data-cursor class="fd-arrow" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:#111;align-self:flex-start">смотреть<span class="fd-cta-ico" style="width:34px;height:34px;border-radius:50%;background:#141414;color:#fff;display:grid;place-items:center;font-size:15px">→</span></a>
 </div>
-<div class="fd-case-img"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-3.jpg" alt="True Medical Care — клиника" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-left" loading="lazy" decoding="async" src="images/phone-clinic-left.png?v=20260903-hq" alt="" aria-hidden="true"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-clinic.png?v=20260903-hq" alt="" aria-hidden="true"></div>
+<div class="fd-case-img"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-3-clean.jpg?v=20260903" alt="True Medical Care — клиника" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-clinic.png?v=20260903-hq" alt="" aria-hidden="true"></div>
 </div>
 
 <div data-cards style="display:grid;grid-template-columns:1fr 1fr;gap:26px">
 
 <div data-reveal data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
-<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-1.jpg" alt="Свежая вода — доставка воды" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-left" loading="lazy" decoding="async" src="images/phone-water-left.png?v=20260903-hq" alt="" aria-hidden="true"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-water.png?v=20260903-hq" alt="" aria-hidden="true"></div>
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-1.jpg" alt="Свежая вода — доставка воды" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-water.png?v=20260903-hq" alt="" aria-hidden="true"></div>
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Доставка воды из скважины</h3>
@@ -336,7 +333,7 @@ button{font-family:inherit}
 </div>
 
 <div data-reveal data-reveal-delay="90" data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
-<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-2.jpg" alt="ALFERRA — агентство" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-left" loading="lazy" decoding="async" src="images/phone-alferra-left.png?v=20260903-hq" alt="" aria-hidden="true"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-alferra.png?v=20260903-hq" alt="" aria-hidden="true"></div>
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-2.jpg" alt="ALFERRA — агентство" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-alferra.png?v=20260903-hq" alt="" aria-hidden="true"></div>
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Figma</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Агентство стратегического развития</h3>
@@ -345,7 +342,7 @@ button{font-family:inherit}
 </div>
 
 <div data-reveal data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
-<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-licenses.jpg" alt="ВЕРА ГРУПП — оформление лицензий" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-left" loading="lazy" decoding="async" src="images/phone-licenses-left.png?v=20260903-hq" alt="" aria-hidden="true"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-licenses.png?v=20260903-hq" alt="" aria-hidden="true"></div>
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-licenses-clean.jpg?v=20260903b" alt="ВЕРА ГРУПП — оформление лицензий" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-licenses.png?v=20260903-hq" alt="" aria-hidden="true"></div>
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Оформление лицензий</h3>
@@ -354,11 +351,11 @@ button{font-family:inherit}
 </div>
 
 <div data-reveal data-reveal-delay="90" data-tilt="5" data-cursor style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -40px rgba(0,0,0,.25);will-change:transform">
-<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-ceilings.jpg" alt="COMFORT SPACE — натяжные потолки" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-left" loading="lazy" decoding="async" src="images/phone-ceilings-left.png?v=20260903-hq" alt="" aria-hidden="true"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-ceilings.png?v=20260903-hq" alt="" aria-hidden="true"></div>
+<div style="position:relative;overflow:hidden;aspect-ratio:16/10;background:#e9e8e5"><img data-tilt-img loading="lazy" decoding="async" src="images/proj-ceilings.jpg" alt="COMFORT SPACE — натяжные потолки" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><img class="fd-phone fd-phone-right" loading="lazy" decoding="async" src="images/phone-ceilings.png?v=20260903-hq" alt="" aria-hidden="true"></div>
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Figma</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Установка натяжных потолков</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">С нуля разработал в Figma структуру, тексты, прототип и дизайн лендинга на основе анализа конкурентов и референсов. Сделал акцент на понятной подаче услуг, демонстрации работ и получении заявок. Вёрстку выполнял другой специалист.</p>
+<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">С нуля разработал в Figma структуру, тексты, прототип и дизайн лендинга на основе анализа конкурентов и референсов. Сделал акцент на понятной подаче услуг, демонстрации работ и получении заявок.</p>
 </div>
 </div>
 
