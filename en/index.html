@@ -93,9 +93,13 @@ button{font-family:inherit}
 .has-cursor,.has-cursor a,.has-cursor button,.has-cursor [data-cursor]{cursor:none}
 [data-header]{transition:background-color .45s,backdrop-filter .45s,border-color .45s,box-shadow .45s}
 [data-header].is-stuck{background:rgba(238,237,235,.72);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);border-bottom-color:rgba(0,0,0,.08)!important;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+[data-brand]{transition:opacity .25s ease,visibility .25s ease}
+.menu-open [data-brand]{opacity:0;visibility:hidden;pointer-events:none}
 [data-mobile-menu]{opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .4s,transform .55s cubic-bezier(.2,.7,.2,1),visibility .4s}
 .menu-open [data-mobile-menu]{opacity:1;visibility:visible;transform:none}
 .fd-burger span{transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.menu-open .fd-burger{border-color:rgba(255,255,255,.3)!important}
+.menu-open .fd-burger span{background:#fff!important}
 .menu-open .fd-burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .menu-open .fd-burger span:nth-child(2){opacity:0}
 .menu-open .fd-burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
@@ -131,6 +135,10 @@ button{font-family:inherit}
 .fd-case.rev{flex-direction:row-reverse}
 .fd-case>.fd-case-txt{flex:1 1 50%;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(28px,4vw,52px)}
 .fd-case>.fd-case-img{flex:1 1 50%;position:relative;overflow:hidden;background:#e9e8e5;min-height:340px}
+.fd-case-copy{display:grid;gap:13px;margin:0;font-size:15px;line-height:1.55;color:rgba(17,17,17,.6)}
+.fd-case-copy p{margin:0}
+.fd-case-copy strong{color:#111;font-weight:700}
+.fd-case>.fd-case-txt .fd-case-copy{max-width:480px;font-size:clamp(14.5px,1.35vw,16px)}
 @keyframes fd-spin-rev{to{transform:rotate(-360deg)}}
 .fd-spin-rev{animation:fd-spin-rev 30s linear infinite;transform-origin:50% 50%}
 @media (max-width:980px){.fd-hide-mob{display:none!important}}
@@ -147,6 +155,7 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 }
 @media (max-width:560px){
 [data-acc-trigger]{grid-template-columns:auto 1fr auto!important}
+.fd-case-copy{gap:11px;font-size:14.5px;line-height:1.5}
 .fd-phone{height:64%;bottom:-4%}
 .fd-case-img .fd-phone{height:72%}
 .fd-phone-right,.fd-case-img .fd-phone-right{right:1.5%}
@@ -160,7 +169,7 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 
 <header data-header data-screen-label="Header" style="position:sticky;top:0;z-index:100;border-bottom:1px solid transparent">
 <div style="max-width:1280px;margin:0 auto;padding:18px clamp(20px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:24px">
-<a href="#top" data-cursor style="display:flex;align-items:center;gap:9px;font-weight:800;font-size:21px;letter-spacing:-.02em">FINDESIGN<span style="width:7px;height:7px;border-radius:50%;background:var(--accent,#9E3490);display:inline-block;margin-bottom:-2px"></span></a>
+<a href="#top" data-brand data-cursor style="display:flex;align-items:center;gap:9px;font-weight:800;font-size:21px;letter-spacing:-.02em">FINDESIGN<span style="width:7px;height:7px;border-radius:50%;background:var(--accent,#9E3490);display:inline-block;margin-bottom:-2px"></span></a>
 <nav class="fd-hide-mob" style="display:flex;align-items:center;gap:clamp(20px,2.4vw,38px);font-size:15px;font-weight:500;color:rgba(17,17,17,.72)">
 <a class="fd-link-u" data-cursor href="#stages">Process</a>
 <a class="fd-link-u" data-cursor href="#work">Work</a>
@@ -313,7 +322,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div>
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:6px 12px;border-radius:100px">landing page</span><span style="font-size:13px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 14px;font-weight:600;font-size:clamp(24px,3vw,38px);letter-spacing:-.02em;line-height:1.05">Healthcare clinic</h3>
-<p style="margin:0;max-width:440px;font-size:clamp(14.5px,1.5vw,16.5px);line-height:1.6;color:rgba(17,17,17,.58)">Completed and launched an unfinished clinic website on Tilda. Reworked the structure and visual design, prepared the copy, responsive layouts, animations and forms — making it easy for visitors to explore services and doctors and book an appointment.</p>
+<div class="fd-case-copy">
+<p><strong>Challenge:</strong> Complete an unfinished clinic website after an unsuccessful collaboration with the previous designer and bring the project to launch.</p>
+<p><strong>Solution:</strong> Reworked the structure and visual design, prepared the copy from the client’s materials, and built the responsive Tilda site with animations and forms.</p>
+<p><strong>Result:</strong> Visitors can immediately find essential information, explore services and doctors, and book an appointment with ease.</p>
+</div>
 </div>
 <a href="https://truemedcare.ru" target="_blank" rel="noopener" data-cursor class="fd-arrow" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:#111;align-self:flex-start">view project<span class="fd-cta-ico" style="width:34px;height:34px;border-radius:50%;background:#141414;color:#fff;display:grid;place-items:center;font-size:15px">→</span></a>
 </div>
@@ -327,7 +340,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">landing page</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Fresh spring water delivery</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Created the water delivery website from scratch: researched competitors, planned the structure and copy, designed it in Figma, then built it on Tilda. Added responsive layouts, animations and a streamlined order form, while clearly explaining where the water comes from.</p>
+<div class="fd-case-copy">
+<p><strong>Challenge:</strong> Create a home water delivery website from scratch, answer the target audience’s key questions, and simplify the ordering process.</p>
+<p><strong>Solution:</strong> Researched competitors, developed the structure and copy, designed the site in Figma, and built it on Tilda.</p>
+<p><strong>Result:</strong> Visitors can find all the information they need, see the delivery terms, and place an order in just a few clicks.</p>
+</div>
 </div>
 </div>
 
@@ -336,7 +353,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">landing page</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Figma</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Strategic development agency</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Created the site structure, wireframe and visual design from scratch in Figma for a strategic development agency. The goal was to build a professional corporate image and strengthen trust in the company. Development was handled by another specialist.</p>
+<div class="fd-case-copy">
+<p><strong>Challenge:</strong> Create an image-led website from scratch that communicates the agency’s professional character and builds trust.</p>
+<p><strong>Solution:</strong> Planned the structure and created the wireframe and visual design in Figma. My role covered design only; development was handled by another specialist.</p>
+<p><strong>Result:</strong> The company received a cohesive presentation website that professionally introduces the agency and its approach.</p>
+</div>
 </div>
 </div>
 
@@ -345,7 +366,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">landing page</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Business licensing</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Created a standalone website for a product licensing service while preserving the visual direction of the company’s main site. Planned the structure, adapted the copy and design, built it on Tilda and configured the forms — so visitors can quickly understand the service and submit an enquiry.</p>
+<div class="fd-case-copy">
+<p><strong>Challenge:</strong> Present the product licensing service on a standalone website while preserving the visual direction of the company’s main site.</p>
+<p><strong>Solution:</strong> Planned the structure, prepared the copy from the client’s materials, adapted the design, and built the responsive Tilda site with forms, domain setup, and basic SEO.</p>
+<p><strong>Result:</strong> Visitors can immediately decide whether the service fits their needs, find answers to key questions, and submit an enquiry.</p>
+</div>
 </div>
 </div>
 
@@ -354,7 +379,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">landing page</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Figma</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Stretch ceiling installation</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Created the structure, copy, wireframe and landing-page design from scratch in Figma, based on competitor research and selected references. The design focuses on clearly presenting the services and portfolio, building trust and generating enquiries.</p>
+<div class="fd-case-copy">
+<p><strong>Challenge:</strong> Design a landing page from scratch that clearly presents the services and helps generate enquiries.</p>
+<p><strong>Solution:</strong> Researched competitors and selected references, then developed the structure, copy, wireframe, and visual design in Figma.</p>
+<p><strong>Result:</strong> Services and completed projects are arranged in a clear sequence that builds trust and guides visitors towards an enquiry.</p>
+</div>
 </div>
 </div>
 
