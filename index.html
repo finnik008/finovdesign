@@ -131,6 +131,10 @@ button{font-family:inherit}
 .fd-case.rev{flex-direction:row-reverse}
 .fd-case>.fd-case-txt{flex:1 1 50%;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(28px,4vw,52px)}
 .fd-case>.fd-case-img{flex:1 1 50%;position:relative;overflow:hidden;background:#e9e8e5;min-height:340px}
+.fd-case-copy{display:grid;gap:13px;margin:0;font-size:15px;line-height:1.55;color:rgba(17,17,17,.6)}
+.fd-case-copy p{margin:0}
+.fd-case-copy strong{color:#111;font-weight:700}
+.fd-case>.fd-case-txt .fd-case-copy{max-width:480px;font-size:clamp(14.5px,1.35vw,16px)}
 @keyframes fd-spin-rev{to{transform:rotate(-360deg)}}
 .fd-spin-rev{animation:fd-spin-rev 30s linear infinite;transform-origin:50% 50%}
 @media (max-width:980px){.fd-hide-mob{display:none!important}}
@@ -147,6 +151,7 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 }
 @media (max-width:560px){
 [data-acc-trigger]{grid-template-columns:auto 1fr auto!important}
+.fd-case-copy{gap:11px;font-size:14.5px;line-height:1.5}
 .fd-phone{height:64%;bottom:-4%}
 .fd-case-img .fd-phone{height:72%}
 .fd-phone-right,.fd-case-img .fd-phone-right{right:1.5%}
@@ -313,7 +318,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div>
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px"><span style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:6px 12px;border-radius:100px">лендинг</span><span style="font-size:13px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 14px;font-weight:600;font-size:clamp(24px,3vw,38px);letter-spacing:-.02em;line-height:1.05">Медицинская клиника</h3>
-<p style="margin:0;max-width:440px;font-size:clamp(14.5px,1.5vw,16.5px);line-height:1.6;color:rgba(17,17,17,.58)">Доработал незавершённый сайт клиники и запустил его на Tilda. Переработал структуру и дизайн, подготовил тексты, адаптив, анимации и формы — теперь посетители легко находят услуги и врачей и могут удобно записаться на приём.</p>
+<div class="fd-case-copy">
+<p><strong>Задача:</strong> Доработать незавершённый сайт клиники после неудачной работы с предыдущим дизайнером и довести проект до запуска.</p>
+<p><strong>Решение:</strong> Переработал структуру и дизайн, подготовил тексты на основе материалов заказчика, выполнил вёрстку на Tilda, адаптив, анимации и формы.</p>
+<p><strong>Результат:</strong> Посетители сразу видят нужную информацию, легко находят услуги и врачей и могут удобно записаться на приём.</p>
+</div>
 </div>
 <a href="https://truemedcare.ru" target="_blank" rel="noopener" data-cursor class="fd-arrow" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:#111;align-self:flex-start">смотреть<span class="fd-cta-ico" style="width:34px;height:34px;border-radius:50%;background:#141414;color:#fff;display:grid;place-items:center;font-size:15px">→</span></a>
 </div>
@@ -327,7 +336,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Доставка воды из скважины</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Создал сайт доставки воды с нуля: изучил конкурентов, продумал структуру и тексты, разработал дизайн в Figma, а затем перенёс его на Tilda. Добавил адаптив, анимации и удобную форму заказа, а также понятно рассказал о происхождении воды.</p>
+<div class="fd-case-copy">
+<p><strong>Задача:</strong> Создать с нуля сайт доставки воды, понятно рассказать о её происхождении и упростить заказ.</p>
+<p><strong>Решение:</strong> Изучил конкурентов, продумал структуру и тексты, разработал дизайн в Figma и перенёс его на Tilda. Добавил адаптив, анимации и удобную форму заказа.</p>
+<p><strong>Результат:</strong> Посетитель быстро понимает, откуда поступает вода, видит условия доставки и может без лишних шагов оформить заказ.</p>
+</div>
 </div>
 </div>
 
@@ -336,7 +349,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Figma</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Агентство стратегического развития</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">С нуля разработал в Figma структуру, прототип и дизайн сайта для агентства стратегического развития. Основная задача — сформировать профессиональный деловой образ компании и повысить доверие к её услугам. Вёрстку выполнял другой специалист.</p>
+<div class="fd-case-copy">
+<p><strong>Задача:</strong> Создать с нуля имиджевый сайт, который передаёт деловой образ агентства и повышает доверие к компании.</p>
+<p><strong>Решение:</strong> Продумал структуру, разработал прототип и визуальный дизайн в Figma. Моей зоной ответственности был только дизайн; вёрстку выполнил другой специалист.</p>
+<p><strong>Результат:</strong> Компания получила цельный презентационный сайт, который профессионально представляет агентство и его подход.</p>
+</div>
 </div>
 </div>
 
@@ -345,7 +362,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Tilda</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Оформление лицензий</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">Разработал отдельный сайт под услугу оформления лицензий, сохранив визуальную концепцию основного сайта компании. Продумал структуру, адаптировал тексты и дизайн, выполнил вёрстку на Tilda и настройку форм — посетитель сразу понимает суть услуги и может удобно оставить заявку.</p>
+<div class="fd-case-copy">
+<p><strong>Задача:</strong> Выделить услугу оформления лицензий в отдельный сайт, сохранив визуальную концепцию основного сайта компании.</p>
+<p><strong>Решение:</strong> Продумал структуру, подготовил тексты по материалам заказчика, адаптировал дизайн под услугу, выполнил вёрстку на Tilda, адаптив, формы, подключение домена и базовые SEO-настройки.</p>
+<p><strong>Результат:</strong> Посетитель сразу понимает, подходит ли ему услуга, получает ответы на основные вопросы и может удобно оставить заявку.</p>
+</div>
 </div>
 </div>
 
@@ -354,7 +375,11 @@ body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 <div style="padding:clamp(22px,2.6vw,32px)">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,#9E3490);background:color-mix(in srgb,var(--accent,#9E3490) 12%,transparent);padding:5px 11px;border-radius:100px">лендинг</span><span style="font-size:12px;color:rgba(17,17,17,.4)">Figma</span></div>
 <h3 style="margin:0 0 10px;font-weight:600;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.02em">Установка натяжных потолков</h3>
-<p style="margin:0;font-size:15px;line-height:1.6;color:rgba(17,17,17,.56)">С нуля разработал в Figma структуру, тексты, прототип и дизайн лендинга на основе анализа конкурентов и референсов. Сделал акцент на понятной подаче услуг, демонстрации работ и получении заявок.</p>
+<div class="fd-case-copy">
+<p><strong>Задача:</strong> Создать с нуля дизайн лендинга, который понятно показывает услуги и помогает получать заявки.</p>
+<p><strong>Решение:</strong> Изучил конкурентов и подобрал референсы, затем разработал структуру, тексты, прототип и визуальный дизайн в Figma.</p>
+<p><strong>Результат:</strong> Услуги и выполненные проекты собраны в понятную последовательность, которая укрепляет доверие и подводит посетителя к заявке.</p>
+</div>
 </div>
 </div>
 
