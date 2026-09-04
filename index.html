@@ -136,6 +136,8 @@ button{font-family:inherit}
 @media (max-width:980px){.fd-hide-mob{display:none!important}}
 @media (min-width:981px){.fd-hide-desk{display:none!important}}
 @media (max-width:980px){
+html,body,#fd-root{width:100%;max-width:100%;overflow-x:hidden}
+body{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 [data-screen-label="Hero"]{grid-template-columns:1fr!important}
 .fd-case,.fd-case.rev{flex-direction:column-reverse!important}
 .fd-case>.fd-case-img{min-height:240px!important}
@@ -199,9 +201,6 @@ button{font-family:inherit}
 <a id="top"></a>
 <section data-screen-label="Hero" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(40px,7vw,86px) clamp(20px,5vw,56px) clamp(40px,6vw,72px);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,72px);align-items:center">
 <div style="min-width:0">
-<div class="fd-eager" style="display:inline-flex;align-items:center;gap:10px;padding:8px 15px;border-radius:100px;background:rgba(40,190,110,.1);font-size:13.5px;font-weight:600;color:#1d7a48;margin-bottom:26px">
-<span class="fd-dot-live" style="width:8px;height:8px;border-radius:50%;background:#28be6e;display:inline-block"></span>Свободен для новых проектов
-</div>
 <h1 class="fd-eager" style="animation-delay:.07s;margin:0;font-weight:600;font-size:clamp(38px,6.4vw,82px);line-height:.98;letter-spacing:-.035em">Сайты, которые<br>превращают<br>посетителей<br>в <span style="color:var(--accent,#9E3490)">клиентов</span></h1>
 <p class="fd-eager" style="animation-delay:.16s;margin:30px 0 0;max-width:480px;font-size:clamp(16px,1.7vw,19px);line-height:1.6;color:rgba(17,17,17,.62)">Разрабатываю сайты под ключ, которые решают задачи бизнеса: привлекают клиентов и повышают конверсию. От идеи и прототипа — до запуска под ключ.</p>
 <div class="fd-eager" style="animation-delay:.24s;margin-top:38px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
